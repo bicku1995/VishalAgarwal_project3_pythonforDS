@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <style>
+        #btn1 {
+            background-color:rgb(44, 247, 159);
+            padding:10px;
+            font-size:15px;
+            border-radius: 5px;
+            cursor: pointer;
+            align-content: center;
+            display: block;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        #content{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>{{msg}}</div>
+    <form action="Register.html" method="post">
+    <h1>Register Page</h1>
+    <div id="content">
+    <input type="text" name="username"/>
+    <input type="Password" name="password"/>
+    <button>Register</button>
+    </div><br>
+   <button id="btn1"> <a href="Login.html">Already have an account?Log In</a></button>
+</form>
+</body>
+</html>

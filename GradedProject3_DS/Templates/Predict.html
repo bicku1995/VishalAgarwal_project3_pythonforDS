@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Page</title>
+    <style>
+        button{
+            background-color:rgb(44, 247, 159);
+            padding:10px;
+            font-size:15px;
+            border-radius: 5px;
+            cursor: pointer;
+            align-content: center;
+            display: block;
+            margin: auto;
+        }
+        h1,h4{
+            text-align: center;
+        }
+        
+        #content{
+            text-align:center;
+        }
+        form{
+            border: 5px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="Predict.html" method="post">
+        <h1>House Loan Eligibility Prediction</h1>
+        <h4>Please enter the details in order to check your house loan eligibility</h4>
+        <div id="content">
+        <label for="gender">gender</label>
+        <select id="gender" name="gender" required="required">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select><br><br>
+        <label for="married">married</label>
+        <select id="married" name="married" required="required">
+            <option value="0">yes</option>
+            <option value="1">No</option>
+        </select><br><br>
+        <label for="dependents">dependents</label>
+        <input type="number" id="dependents" name="dependents"><br><br>
+        <label for="education">education</label>
+        <select id="education" name="education" required="required">
+            <option value="0">Under-graduate</option>
+            <option value="1">graduate</option>
+        </select><br><br>
+        <label for="self-employed">self-employed</label>
+        <select id="self-employed" name="self-employed" required="required">
+            <option value="0">yes</option>
+            <option value="1">no</option>
+        </select><br><br>
+        <label for="Applicant-income">Applicant Income ($)</label>
+        <input required="required" id="Applicant-income" name="Applicant Income ($)"><br><br>
+        <label for="Coapplicant-income">Coapplicant Income ($)</label>
+        <input required="required" id="Coapplicant-income" name="Coapplicant Income ($)"><br><br>
+        <label for="Loan-Ammount">Loan Ammount ($)</label>
+        <input required="required" id="Coapplicant-income" name="Loan Ammount ($)"><br><br>
+        <label for="Loan-Ammount-Terms">Loan Ammount Terms (in months)</label>
+        <input required="required" id="Loan-Ammount-Terms" name="Loan Ammount Terms (in months)"><br><br>
+        <label for="Credit History">Credit History</label>
+        <select id="Credit History" name="Credit History" required="required">
+            <option value="0">yes</option>
+            <option value="1">no</option>
+        </select><br><br>
+        <label for="Property Area">Property Area</label>
+        <select id="Property Area" required="required" name="Property Area">
+            <option value="0">rural</option>
+            <option value="1">semiurban</option>
+            <option value="2">urban</option>
+        </select>
+    </div><br><br>
+        <button type="submit">Submit</button><br><br>
+        
+
+    </form>
+
+
+    <button><a href="Login.html">Press here to logout</a></button>
+    <br><br><h3>{{prediction_text}}</h3>
+</body>
+</html>
